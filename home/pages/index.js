@@ -20,7 +20,7 @@ export default function Home() {
     </div>
   );
 }
-
+// more changes
 export function getServerSideProps() {
   return {
     props: {
