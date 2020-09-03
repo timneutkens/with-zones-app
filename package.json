@@ -1,5 +1,9 @@
 {
   "name": "with-zones-example",
   "private": true,
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "home",
+    "blog"
+  ]
 }
