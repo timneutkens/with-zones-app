@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import dynamic from 'next/dynamic'
+import Link from "next/link";
+import dynamic from "next/dynamic";
 
-const Header = dynamic(import('../components/Header'))
+const Header = dynamic(import("../components/Header"));
 
 export default function Home() {
   return (
@@ -18,5 +18,13 @@ export default function Home() {
       </div>
       <img width={200} src="/static/nextjs.png" />
     </div>
-  )
+  );
+}
+
+export function getServerSideProps() {
+  return {
+    props: {
+      test: "123",
+    },
+  };
 }
